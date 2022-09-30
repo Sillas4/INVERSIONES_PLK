@@ -1,0 +1,289 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #e4d1d8;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Slider*/
+
+.contenedorslider{
+    height: 450px;
+    overflow: hidden;
+}
+.carrusel{
+    height: 100%;
+    position: relative;
+}
+.diapositiva{
+    height: 100%;
+}
+.bottransicion{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.diapositiva img{
+    height: 100%;
+    width: 100%;
+}
+.bottransicion i{
+    color: rgb(148, 48, 98);
+    font-size: 30px;
+}
+
+/*menú*/
+
+nav{
+    background: rgb(0, 0, 0);
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+}
+nav ul li{
+    padding: 15px;
+    color: #fff;
+}
+nav ul li:hover{
+    background-color: rgb(201, 36, 113);
+    transition: all .5s;
+    border-radius: 3px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    margin: 20px;
+}
+
+/*servicios de la empresa en página inicio*/
+
+.contenedor_tarjetas_servicio{
+    width: 100%;
+    display: flex;
+}
+.tarjeta{
+    width: 100%;
+    margin: 40px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+    cursor: default;
+    transition: all 500ms ease;
+}
+.tarjeta:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5%);
+}
+.tarjeta img{
+    width: 100%;
+    height: 300px;
+}
+.tarjeta .contenido_tarjeta{
+    padding: 15px;
+    text-align: center;
+}
+.contenido_tarjeta h2{
+    font-weight: 400;
+    margin-top: auto;
+}
+.contenido_tarjeta p{
+    line-height: 1.5;
+    color: rgb(100, 100, 100);
+    padding: 10px;
+    text-align: justify;
+}
+.contenido_tarjeta a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(201, 36, 113);
+    border: 1px solid rgb(201, 36, 113);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.contenido_tarjeta a:hover{
+    background-color: rgb(201, 36, 113);
+    color: #fff;
+}
+
+/*Características de la empresa en página inicio*/
+
+.contenedor_tarjetas_caracteristicas{
+    width: 100%;
+    display: flex;
+}
+.tarjeta2{
+    width: 100%;
+    margin: 40px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+    cursor: default;
+    transition: all 500ms ease;
+}
+.tarjeta2:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5%);
+}
+.tarjeta2 img{
+    width: 100%;
+    height: 350px;
+}
+.tarjeta2 .contenido_tarjeta2{
+    padding: 15px;
+    text-align: center;
+}
+.contenido_tarjeta2 h2{
+    font-weight: 400;
+    margin-top: auto;
+}
+.contenido_tarjeta2 p{
+    line-height: 1.5;
+    color: rgb(100, 100, 100);
+    padding: 10px;
+    text-align: justify;
+}
+.contenido_tarjeta2 a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(201, 36, 113);
+    border: 1px solid rgb(201, 36, 113);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.contenido_tarjeta2 a:hover{
+    background-color: rgb(201, 36, 113);
+    color: #fff;
+}
+section h1{
+    color: rgb(201, 36, 113);
+    text-align: center;
+    text-decoration: blink;
+    margin: 10px;
+}
+
+/*Footer*/
+
+.pie_página{
+    width: 100%;
+    background-color: black;
+}
+.pie_página .datos_empresa{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 20px;
+}
+.datos_empresa .dato figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.datos_empresa .dato img{
+    width: 150px;
+}
+ .datos_empresa .dato h4{
+    color: #fff;
+    margin-bottom: 40px;
+    font-weight: 300;
+    justify-content: center;
+}
+.datos_empresa .dato p{
+    color: #fff;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+.derechos .copyRight{
+    background-color: #201f20;
+    color: #fff;
+    text-align: center;
+    padding: 15px 10px;
+}
+
+/*responsiva*/
+
+@media (max-width: 800px){
+    header{
+        display: inline-block;
+        width: 100%;
+        height: 100px;
+    }
+    nav ul li a{
+        margin: 0px;
+        padding: 0px;
+        font-size: small;
+    }
+    .contenedorslider {
+        width: 100%;
+        height: 300px;
+    }
+    .contenedor_tarjetas_caracteristicas{
+        margin: 10px;
+    }
+    .tarjeta{
+        height: 500px;
+        margin: 10px;
+        width: 100%;
+    }
+    .tarjeta img{
+        height: 200px;
+        width: 100%;
+    }
+    .contenido_tarjeta{
+        height: 100%;
+        width: 100%;
+        font-size: small;
+    }
+    .contenido_tarjeta p{
+        text-align: justify;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .contenedor_tarjetas_servicio{
+        margin: 10px;
+    }
+    .tarjeta2{
+        height: 500px;
+        margin: 10px;
+        width: 100%;
+    }
+    .tarjeta2 img{
+        height: 200px;
+        width: 100%;
+    }
+    .contenido_tarjeta2{
+        height: 100%;
+        width: 100%;
+        font-size: small;
+    }
+    .contenido_tarjeta2 p{
+        text-align: justify;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .datos_empresa .dato{
+        width: 100%;
+    }
+}
